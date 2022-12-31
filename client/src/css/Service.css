@@ -23,8 +23,9 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 60%;
+    width: 100%;
     height: 30%;
+    margin-bottom: 30px;
 }
 
 .service_content_top h1{
@@ -38,7 +39,8 @@
 .service_content_top p{
     font-weight: 500;
     color: #3d3d3d;
-    font-size: calc(var(--index)*0.6);
+    font-size: calc(var(--index)*0.7);
+    letter-spacing: 1.4px;
 }
 
 .service_content_bottom{
@@ -98,12 +100,11 @@
     background-color: #f3ad2b;
     width: 100%;
     height: 100%;
-    border: none
+    border: none;
 }
 
 .image .img{
     position: relative;
-    background-image: url(../assets/logo/food.jpeg);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -111,7 +112,7 @@
 }
 
 .image:hover .img{
-    transition: all .3s ease;
+    transition: all .4s ease;
     filter: invert(1);
 }
 
@@ -134,3 +135,54 @@
    margin-top: -20px;
    font-size: calc(var(--index)*0.6);
 }
+
+@media(max-width: 740px) {
+    .service{
+        height: 130vh;
+    }
+    .service_content{
+        height: 90%;
+        justify-content: flex-start;
+    }
+    .service_content_bottom{
+        flex-direction: column;
+        height: 85%;
+        letter-spacing: 1.4px;
+    }
+    .service_content_top{
+        width: 100%;
+        height: 15%;
+        letter-spacing: 1.4px;
+    }
+    .service_content_top h1{
+        margin-bottom: 20px;
+    }
+    .service_content_top p{
+        font-size: calc(var(--index)*1);
+        letter-spacing: 1.4px;
+    }
+    .service_content_container{
+        width: 100%;
+    }
+    .service_container_bottom{
+        padding: 0;
+    }
+    .service_container_bottom h1 {
+        font-size: calc(var(--index)*1.3);
+    }
+    .service_container_bottom p {
+        font-size: calc(var(--index)*1.1);
+    }
+}
+
+/* @media(max-width: 620px) {
+    .service{
+        height: 200vh;
+    }
+}
+
+@media(max-width: 400px) {
+    .service{
+        height: 300vh;
+    }
+} */

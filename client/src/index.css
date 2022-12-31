@@ -17,6 +17,20 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fac564;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #0a0a0a;
+}
+
 @font-face {
   font-family: Caveat;
   src: url(./assets/fonts/Caveat-Regular.ttf);
@@ -36,3 +50,4 @@ body {
   font-family: Work Sans;
   src: url(./assets/fonts/WorkSans-Regular.ttf);
 }
+

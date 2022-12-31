@@ -1,0 +1,111 @@
+.workInfo{
+    height: 40vh;
+    background-image: url(../assets/1.jpg);
+    background-size: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workInfo_content{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.icon_image{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon_image::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #fac564;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease;
+}
+
+.icon_image:hover::after{
+    background-color: #fac564;
+    transform: rotate(135deg);
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.icon_image:hover{
+    color: #000;
+}
+
+.icon_image_img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    color: #fac564;
+    z-index: 33;
+}
+
+.icon_image_img:hover{
+    color: #000;
+}
+
+.icon_info{
+    font-family: "Work Sans", sans-serif;
+}
+.icon_info h2{
+    color: #fac564;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 900px){
+    .workInfo{
+        height: 50vh;
+    }
+    .icon_block{
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 454px){
+    .workInfo{
+        height: 100vh;
+    }
+    .icon_block{
+        justify-content: center;
+    }
+    .icon_image{
+        margin: 20px;
+    }
+}

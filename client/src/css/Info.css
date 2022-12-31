@@ -77,6 +77,10 @@
     background-color: #fac564;
 }
 
+.social {
+    display: flex;
+}
+
 .social_logo{
     margin: 0 10px;
     cursor: pointer;
