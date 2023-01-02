@@ -36,4 +36,5 @@
 
 .link:focus{
     color: #fac564;
+    border-bottom: 1px solid #fac564;
 }

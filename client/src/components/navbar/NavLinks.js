@@ -12,42 +12,48 @@ const NavLinks = (props) => {
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.05}}
-                onClick={() => props.isMobile && props.closeMobileMenu()}>
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                className='link_box'>
                     <Link className='link' to="/">Home</Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.10}}
-                onClick={() => props.isMobile && props.closeMobileMenu()}>
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                className='link_box'>
                     <Link className='link' to='/menu' >Menu</Link>
             </motion.li>
             <motion.li
                 initial={animateFrom}
                 animate={animateTo} 
                 transition={{delay: 0.20}}
-                onClick={() => props.isMobile && props.closeMobileMenu()}>
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                className='link_box'>
                     <Link className='link' to="/service">Service</Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.30}}
-                onClick={() => props.isMobile && props.closeMobileMenu()}>
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                className='link_box'>
                     <Link className='link' to="/blog">Blog</Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.40}}
-                onClick={() => props.isMobile && props.closeMobileMenu()}>
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                className='link_box'>
                     <Link className='link' to="/about">About</Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.50}}
-                onClick={() => props.isMobile && props.closeMobileMenu()}>
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                className='link_box'>
                     <Link className='link' to="/contact">Contact</Link>
             </motion.li>
         </ul>

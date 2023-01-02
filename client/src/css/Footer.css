@@ -1,0 +1,96 @@
+.footer{
+    height: 80vh;
+    background: #101315;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container{
+    width: 90%;
+    height: 60%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_container_top{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer_about{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+
+.footer_about h1{
+    color: #fff;
+    font-size: calc(var(--index)*1.1);
+    margin: 10px;;
+}
+
+.footer_about p{
+    color: rgba(255, 255, 255, .7);
+    font-size: calc(var(--index)*0.6);
+    margin: 10px;;
+}
+
+.blog_about{
+    width: 100%;
+    height: 50%;
+}
+
+.footer_services{
+    width: 100%;
+    height: 50%;
+}
+
+.footer_question{
+    width: 100%;
+    height: 50%;
+}
+
+.footer_container_bottom{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container_bottom p{
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: calc(var(--index)*0.77); 
+    letter-spacing: 1.5px;
+    color: #ffffffb3;
+}
+
+.social_apps{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social_apps_circle{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.social_apps_icon{
+    background:rgba(255, 255, 255, 0.05);
+    border-radius: 40%;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+}

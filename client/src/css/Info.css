@@ -84,7 +84,14 @@
 .social_logo{
     margin: 0 10px;
     cursor: pointer;
+    transition: all .5s ease;
 }
+
+.social_logo:hover{
+    transform: scale(1.1);
+    filter: invert(1);
+}
+
 
 @media(max-width: 1160px) {
     .info{
